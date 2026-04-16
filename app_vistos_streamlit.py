@@ -14,7 +14,11 @@ if not DATABASE_URL:
 def conectar():
     return psycopg2.connect(DATABASE_URL)
 
-st.set_page_config(page_title="Agenda Vistos", page_icon="📱", layout="centered")
+st.set_page_config(
+    page_title="Agenda Vistos",
+    page_icon="https://getvisa.com.br/wp-content/uploads/2026/03/logo-site.png",  # ajuste a URL real
+    layout="centered"
+)
 st.title("📱 Agenda Interna - Vistos")
 st.write("Compromissos pendentes (CASV, Entrevista, Treinamento)")
 
