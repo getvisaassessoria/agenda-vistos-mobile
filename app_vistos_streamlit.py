@@ -3,6 +3,7 @@ import psycopg2
 import pandas as pd
 from datetime import datetime
 import os
+import streamlit as st
 
 # Lê a URL do banco de dados da variável de ambiente (configurada no Streamlit Cloud)
 DATABASE_URL = os.environ.get("DATABASE_URL")
@@ -16,7 +17,7 @@ def conectar():
 
 st.set_page_config(
     page_title="Agenda Vistos",
-    page_icon="https://getvisa.com.br/wp-content/uploads/2026/03/logo-site.png",  # ajuste a URL real
+    page_icon="✈️",
     layout="centered"
 )
 st.title("📱 Agenda Interna - Vistos")
