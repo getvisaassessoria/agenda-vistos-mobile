@@ -20,6 +20,10 @@ st.set_page_config(
     page_icon="✈️",
     layout="centered"
 )
+st.markdown("""
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+""", unsafe_allow_html=True)
 st.title("📱 Agenda Interna - Vistos")
 st.write("Compromissos pendentes (CASV, Entrevista, Treinamento)")
 
